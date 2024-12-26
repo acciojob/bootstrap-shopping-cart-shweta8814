@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Shopping Cart</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-        header h1 {
-            text-align: center;
+        .block-heading {
             color: #3b99e0;
+            text-align: center;
             margin: 20px 0;
         }
         .summary {
@@ -35,12 +35,18 @@
             max-width: 100%;
             height: auto;
         }
+        .product-title {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #333;
+        }
     </style>
 </head>
 <body>
+
     <!-- Block Heading -->
-    <header class="block-heading">
-        <h1>Shopping Cart</h1>
+    <header>
+        <h1 class="block-heading">Shopping Cart</h1>
     </header>
 
     <!-- Shopping Cart Layout -->
@@ -50,34 +56,46 @@
             <div class="col-lg-8">
                 <div class="product">
                     <div class="row">
-                        <div class="col-md-6">
-                            <img src="https://images.unsplash.com/photo-1609692814858-f7cd2f0afa4f?w=500&auto=format&fit=crop&q=60" alt="Product" class="img-responsive">
+                        <div class="col-md-4">
+                            <img src="https://images.unsplash.com/photo-1609692814858-f7cd2f0afa4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwbGUlMjBwaG9uZXxlbnwwfHwwfHx8MA%3D%3D"  class="img-responsive">
                         </div>
-                        <div class="col-md-6">
-                            <h2>Apple Phone</h2>
-                            <p>Display: 5 inches</p>
-                            <p>Ram: 4GB</p>
-                            <p>Memory: 32GB</p>
-                            <p>Quantity</p>
-                            <button class="btn btn-primary">1</button>
-                            <p>Price: $120</p>
+                        <div class="col-md-8">
+                            <h3 class="product-title">Product Name 1</h3>
+                            <p>Display: 6.1 inches</p>
+                            <p>Ram: 6GB</p>
+                            <p>Storage: 128GB</p>
+                            <p>Price: $150</p>
+                            <button class="btn btn-primary">Quantity: 1</button>
                         </div>
                     </div>
                 </div>
-                <!-- Repeat Product Block -->
                 <div class="product">
                     <div class="row">
-                        <div class="col-md-6">
-                            <img src="https://images.unsplash.com/photo-1609692814858-f7cd2f0afa4f?w=500&auto=format&fit=crop&q=60" alt="Product" class="img-responsive">
+                        <div class="col-md-4">
+                            <img src="https://images.unsplash.com/photo-1609692814858-f7cd2f0afa4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwbGUlMjBwaG9uZXxlbnwwfHwwfHx8MA%3D%3D"  class="img-responsive">
                         </div>
-                        <div class="col-md-6">
-                            <h2>Apple Phone</h2>
-                            <p>Display: 5 inches</p>
+                        <div class="col-md-8">
+                            <h3 class="product-title">Product Name 2</h3>
+                            <p>Display: 5.5 inches</p>
                             <p>Ram: 4GB</p>
-                            <p>Memory: 32GB</p>
-                            <p>Quantity</p>
-                            <button class="btn btn-primary">1</button>
-                            <p>Price: $120</p>
+                            <p>Storage: 64GB</p>
+                            <p>Price: $100</p>
+                            <button class="btn btn-primary">Quantity: 1</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://images.unsplash.com/photo-1609692814858-f7cd2f0afa4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwbGUlMjBwaG9uZXxlbnwwfHwwfHx8MA%3D%3D"  class="img-responsive">
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="product-title">Product Name 3</h3>
+                            <p>Display: 6.5 inches</p>
+                            <p>Ram: 8GB</p>
+                            <p>Storage: 256GB</p>
+                            <p>Price: $200</p>
+                            <button class="btn btn-primary">Quantity: 1</button>
                         </div>
                     </div>
                 </div>
@@ -86,11 +104,11 @@
             <!-- Summary Section -->
             <div class="col-lg-4">
                 <div class="summary">
-                    <h3>Summary</h3>
-                    <p>Subtotal: $360</p>
+                    <h3>Order Summary</h3>
+                    <p>Subtotal: $450</p>
                     <p>Discount: $0</p>
-                    <p>Shipping: $0</p>
-                    <p>Total: $360</p>
+                    <p>Shipping: Free</p>
+                    <p><strong>Total: $450</strong></p>
                     <button class="btn">Checkout</button>
                 </div>
             </div>
@@ -100,6 +118,7 @@
     <footer class="text-center" style="margin-top: 20px; padding: 10px; background-color: #f7fbff; border-top: 1px solid #ddd;">
         <p>&copy; 2024 Shopping Cart</p>
     </footer>
+
 </body>
 </html>
 
