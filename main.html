@@ -7,68 +7,119 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-        .block-heading {
+    
+</head>
+	<style>
+		header h1{
+			text-align:center;
+		}
+		block-heading {
             color: #3b99e0;
             text-align: center;
-            margin-top: 20px;
+            margin: 20px 0;
         }
-        .summary {
-            border-top: 3px solid #5ea4f3;
+		.summary {
+            border-top: 2px solid #5ea4f3;
             background-color: #f7fbff;
             padding: 20px;
         }
-        .summary .btn {
+		.summary .btn {
             background-color: #3b99e0;
-            color: white;
-            border: none;
+            color: #fff;
+            width: 100%;
         }
-    </style>
-</head>
+		 .summary .btn:hover {
+            background-color: #2f7cc0;
+        }
+		.product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+	</style>
 <body>
+
+	<!-- Block Heading -->
+	<header class"block-heading">
+		<h1>Shopping Cart</h1>
+	</header>
+
+	    <!-- Shopping Cart Layout -->
     <div class="container">
-        <!-- Block Heading -->
-        <h1 class="block-heading"><p>Shopping Cart</p></h1>
+		<div class="row">
 
-        <div class="row mt-4">
-            <!-- Product Section -->
-            <div class="col-lg-8">
-                <div class="product">
-                    <div class="row mb-3">
-                        <div class="col-4">
-                            <img src="https://via.placeholder.com/150" class="img-fluid" alt="Product 1">
-                        </div>
-                        <div class="col-4">
-                            <img src="https://via.placeholder.com/150" class="img-fluid" alt="Product 2">
-                        </div>
-                        <div class="col-4">
-                            <img src="https://via.placeholder.com/150" class="img-fluid" alt="Product 3">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4">
-                            <p>Product Name</p>
-                        </div>
-                        <div class="col-4">
-                            <p>$25.00</p>
-                        </div>
-                        <div class="col-4">
-                            <button class="btn btn-primary">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+			    <!-- Product Section -->
+			<div class="col-lg-8">
+				<div class="product">
+				<div class="row">
+					<div class="col-md-6">
+						 <img src="https://images.unsplash.com/photo-1609692814858-f7cd2f0afa4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwbGUlMjBwaG9uZXxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid">
+						<h4>Apple Phone</h4>
+						<p>Display: 5 inches</p>
+						<p>Ram: 4GB</p>
+						<p>Memory: 32Gb</p> <p>Quantity</p>
+                            <button class="btn btn-outline-primary">1</button>
+						<p>$120</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>	
 
-            <!-- Summary Section -->
-            <div class="col-lg-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="product">
+				<div class="row">
+					<div class="col-md-6">
+						 <img src="https://images.unsplash.com/photo-1609692814858-f7cd2f0afa4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwbGUlMjBwaG9uZXxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid">
+						<h4>Apple Phone</h4>
+						<p>Display: 5 inches</p>
+						<p>Ram: 4GB</p>
+						<p>Memory: 32Gb</p> <p>Quantity</p>
+                            <button class="btn btn-outline-primary">1</button>
+						<p>$120</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="product">
+				<div class="row">
+					<div class="col-md-6">
+						 <img src="https://images.unsplash.com/photo-1609692814858-f7cd2f0afa4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwbGUlMjBwaG9uZXxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid">
+						<h4>Apple Phone</h4>
+						<p>Display: 5 inches</p>
+						<p>Ram: 4GB</p>
+						<p>Memory: 32Gb</p> <p>Quantity</p>
+                            <button class="btn btn-outline-primary">1</button>
+						<p>$120</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+	 <!-- Summary Section -->
+	<div class="col-lg-4">
                 <div class="summary">
-                    <h3>Order Summary</h3>
-                    <p>Subtotal: $75.00</p>
-                    <p>Tax: $5.00</p>
-                    <p>Total: $80.00</p>
-                    <button class="btn w-100">Checkout</button>
-                </div>
-            </div>
+                    <h3>Summary</h3>
+                    <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                     <p>Subtotal   $360</p>
+					 <p>Discount   $0</p>
+					 <p>Shipping   $0</p>
+					 <p>Total      $360</p>	
+						 <button class="btn btn-primary">Checkout</button>
         </div>
     </div>
 
